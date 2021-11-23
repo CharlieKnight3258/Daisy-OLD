@@ -34,7 +34,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-from DaisyX import (
+from Charlie import (
     ALLOW_EXCL,
     BL_CHATS,
     CERT_PATH,
@@ -56,14 +56,14 @@ from DaisyX import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from DaisyX.modules import ALL_MODULES
-from DaisyX.modules.helper_funcs.alternate import typing_action
-from DaisyX.modules.helper_funcs.chat_status import is_user_admin
-from DaisyX.modules.helper_funcs.misc import paginate_modules
-from DaisyX.modules.helper_funcs.readable_time import get_readable_time
+from Charlie .modules import ALL_MODULES
+from Charlie .modules.helper_funcs.alternate import typing_action
+from Charlie .modules.helper_funcs.chat_status import is_user_admin
+from Charlie.modules.helper_funcs.misc import paginate_modules
+from Charlie.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello there, I'm [Charlie]
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
 
@@ -79,14 +79,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Add Charlie to your group 💫", url="t.me/http://t.me/GroupAssistantCharlieBot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
+*Main Commands :* 
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
